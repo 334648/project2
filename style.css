@@ -112,8 +112,12 @@ p {
     text-align: center;
    line-height: 20px;
    
-   
-   }
+}
+
+.text1 > p {
+    padding-bottom: 7rem;
+    font-family: 'Courgette', cursive;
+}
 
    button {
     display: inline-block;
@@ -130,9 +134,7 @@ p {
     width: 100px;
 }
 
-#close-CSS {
-    background-image: url( 'http://thinkingstiff.com/images/matt.jpg' );
-    background-size: 100px 130px;
-    height: 134px;  
-    width: 104px;
-}
+body {
+    background-image: url("695451.jpg");
+    background-color: #cccccc;
+   }
