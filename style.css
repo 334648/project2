@@ -121,15 +121,19 @@ body div iframe
 }
 
 p {
-    text-align: center;
    line-height: 20px;
-   
+   text-align: center;
 }
 
 .text1 > p {
+    
     padding-bottom: 7rem;
     font-family: 'Courgette', cursive;
 }
+
+
+
+
 
    button {
     display: inline-block;
@@ -161,3 +165,5 @@ body {
     left: 1%;
     margin-top: 10px;
 }
+
+
