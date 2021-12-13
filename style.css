@@ -92,6 +92,18 @@ footer {
     box-shadow: 0 0 1rem 0 rgb(0, 0, 0, .5);
     z-index: 5;
     clear: both;
+    
+}
+
+.instagram{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 1%;
+    margin-top: -3%;
+   
 }
 
 body div 
