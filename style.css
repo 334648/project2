@@ -202,3 +202,13 @@ body {
     font-family: 'Road Rage', 'cursive';
     font-family: 'Rubik', sans-serif;
 }
+
+
+.box {
+    width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+    position: relative;
+    top:200px;
+  }
