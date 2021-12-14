@@ -102,11 +102,24 @@ footer {
 .instagram{
     display: inline-block;
     vertical-align: middle;
-    width: 70px;
-    height: 70px;
+    width: 76px;
+    height: 76px;
     position: absolute;
-    right: 1%;
-    margin-top: -3%;
+    right: 0%;
+    margin-top: -4.4%;
+    
+   
+}
+
+.facebook {
+    display: inline-block;
+    vertical-align: middle;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    right: 4%;
+    margin-top: -4%;
+    
    
 }
 
