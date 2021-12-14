@@ -34,17 +34,56 @@
 <img src="img/co.jpg" alt="Constellations" width="470" height="470" div style = "position:relative; left:1000px; top:2px";>
 
 
-<footer class="footer" style="color:rgb(255, 255, 255)">
-    <p class="footerP">© Devika Tewarie & Akshay Baldew  ©</p>
-    <li class="socialMedias"> <img class="instagram" src="img/ig.jpg" href="https://www.instagram.com/costarastrology/?utm_source=ig_embed"/>
-    <li class="facebook"> <img class="facebook" src="img/facebook.png" href="https://www.instagram.com/costarastrology/?utm_source=ig_embed"/> </li>
-    
-    </li>
-    </footer>
+
+<div class="lijst">
+</div>
+<div class="lijst">
+  <div class="row">
+    <div class="col-6">
+
+      <!--Het formulier komt hier-->
+      <form action="./createe.php" method="post">
+        <label class="form-label" for="inputFirstname">Voornaam: </label>
+        <input class="form-control mb-3" type="text" name="firstname" id="inputFirstname" placeholder="verplicht.."
+          required>
+         <br>
+         <br>
+        <label for="inputLastname">Tussenvoegsel: </label>
+        <input class="form-control mb-3" type="text" name="infix" id="inputInfix" placeholder="optioneel" required>
+        <br>
+        <br>
+        <label for="inputLastname">Achternaam: </label>
+        <input class="form-control mb-3" type="text" name="lastname" id="inputLastname" placeholder="verplicht..." required>
+         <br>
+         <br>
+       <label class="form-label" for="inputSelect"> Welke service heb je gekozen?</label>
+       <select name="snoepgoed" class="form-select mb-4" id="inputSelect">
+        <option value="">kies service</option>
+        <option value="">reading</option>
+        <option value="">our products</option>
+      </select>
+       <br>
+       <br>
+      <label for="inputGender">Vrouw </label>
+      <input type= "radio" name="gender" id="inputGender" value="vrouw">
+       <br>
+      <label for="inputGender">Man </label>
+      <input type= "radio" name="gender" id="inputGender" value="man">
+      <br>
+      <label for="inputGender">Anders </label>
+      <input type= "radio" name="gender" id="inputGender" value="anders">
+       <br>
+        <input type="submit" value="verstuur" class="btn btn-outline-success btn-lg form-control" >
+      </form>
 </div>
 
+<div>
+<img src="img/signs.jpg" alt="Signs" width="600" height="500"  div style = "position:relative; left:-500px; top:400px">
+</div>
 
-
+<div class="text3" div style="position:absolute; top:700px;">
+<p>Astrology puts our temporary bodies in context with our universe's vastness, allowing irrationality to invade our techno-rationalist ways of living. Access to astrology this accurate has historically been restricted to those with access to personal astrologers—now these predictions can be anyone's. </p>
+</div>
 
 </body>
 
