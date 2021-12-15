@@ -188,8 +188,8 @@ body {
 
   .lijst {
     color: rgb(255, 255, 255);
-    background-color: #00000000;
-    margin-top:-150px;
+    background-color: #e0d1d100;
+    margin-top:-180px;
     background-size: 50% auto;
     width: 80%;
   
@@ -213,4 +213,25 @@ body {
     position: relative;
     top:200px;
     left: 100px;
+  }
+  
+  #image1 {
+
+    width: 400px;  
+    height:150px;  
+    top: 50%;
+    margin-top: 255px;
+    left: 20px;
+ }
+
+
+ .box2 {
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+    position: relative;
+    top: -15px;
+    left: 500px;
   }
