@@ -197,10 +197,8 @@ body {
 
    .text3 > p {
     color: rgb(255, 255, 255);
-    width:100%;
+    width:150%;
     padding-left:900px;
+    font-family: 'Road Rage', 'cursive';
+    font-family: 'Rubik', sans-serif;
 }
-
-.checked {
-    color: orange;
-  }
