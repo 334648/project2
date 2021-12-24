@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zodiac</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+    <nav>
+        <ul>
+            <a href="file:///C:/Users/devik/OneDrive/Bureaublad/project2/index.html">
+                <img class="logo" src="img/moon.png"> </a>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="overons.html">Over ons</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="review.html">Review</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body background="backgroundimg.jpg">
+
+
+    <div class="box1">
+        <h2 style="color: lightgrey;">Readings <br> </h2>
+        <div style="position:absolute; left:10px; top:60px">
+            <p style="color: white;"> Our readings are flexible and totally guided by you. If you need some help
+                narrowing down your options you have a few tools! First, you can set a topic at the beginning of your
+                reading from a list of common topics, like love, or career. Once you’re in the reading, you can ask your
+                reader for some insight on a specific situation in your life that you’re dealing with, and they can tell
+                you how your chart, energy, or cards can reveal more insight or help you navigate your path through it.
+            </p>
+        </div>
+        
+
+        <div class="box2">
+            <h2 style="color: lightgrey;">Our products <br> </h2>
+            <div style="position:absolute; left:10px; top:60px">
+                <p style="color: white;"> Next to a great reading, we also offer some of our products including
+                    crystals, jewellery and your own personalised birth chart constellation. Check it out and maybe you
+                    can even buy one for you family/friends! </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
