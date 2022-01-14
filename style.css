@@ -209,12 +209,12 @@ body {
     width: 500px;
     height: 500px;
     padding: 10px;
-    border: 5px solid gray;
+    border: 5px solid rgb(30, 23, 70);
     margin: 0;
     position: relative;
     top:200px;
     left: 100px;
-    background-color: rgba(128, 128, 128, 0.185);
+    background-color: rgba(38, 29, 88, 0.185);
     background-image: url("img/reading.jpg");
     background-position: bottom;
     background-repeat: no-repeat;
@@ -234,20 +234,34 @@ body {
  .box2 {
     width: 500px;
     height: 500px;
-    padding: 10px;
-    border: 5px solid gray;
+    padding: 9px;
+    border: 5px solid rgb(30, 23, 70);
     margin: 0;
     position: absolute;
     top: -5px;
     left: 700px;
-    background-color: rgba(128, 128, 128, 0.185);
-    background-color: rgba(128, 128, 128, 0.185);
+    background-color: rgba(38, 29, 88, 0.185);
     background-image: url("img/as.jpg");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 250px;
   }
 
+  .box3 {
+    width: 500px;
+    height: 400px;
+    padding: 15px;
+    border: 5px solid rgb(34, 24, 87);
+    position: relative;
+    top: -50px;
+    left: -10px;
+    margin: 100px auto;
+    background-color: rgba(46, 30, 88, 0);
+    background-image: url("img/some.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 250px;
+  }
   p{
       color: #fefefe;
   }
