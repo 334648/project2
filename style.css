@@ -144,7 +144,7 @@ p {
 
 .text1 > p {
     
-    padding-bottom: 7rem;
+    padding-bottom: 5rem;
     font-family: 'Road Rage', 'cursive';
     font-family: 'Rubik', sans-serif;
     font-size: larger;
@@ -214,6 +214,11 @@ body {
     position: relative;
     top:200px;
     left: 100px;
+    background-color: rgba(128, 128, 128, 0.185);
+    background-image: url("img/reading.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 300px;
   }
   
   #image1 {
@@ -235,6 +240,12 @@ body {
     position: absolute;
     top: -5px;
     left: 700px;
+    background-color: rgba(128, 128, 128, 0.185);
+    background-color: rgba(128, 128, 128, 0.185);
+    background-image: url("img/as.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 250px;
   }
 
   p{
@@ -304,4 +315,3 @@ body {
        font-size: 20px;
    }
 
-  
