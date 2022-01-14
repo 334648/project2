@@ -148,6 +148,7 @@ p {
     font-family: 'Road Rage', 'cursive';
     font-family: 'Rubik', sans-serif;
     font-size: larger;
+    color: #fefefe;
 }
 
 
@@ -234,6 +235,14 @@ body {
     position: absolute;
     top: -5px;
     left: 700px;
+  }
+
+  p{
+      color: #fefefe;
+  }
+
+  h2{
+      color: lightgray;
   }
 
   
