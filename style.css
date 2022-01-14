@@ -252,7 +252,7 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 40vh;
+    height: 30vh;
     overflow: hidden;
 
    }
@@ -290,7 +290,7 @@ body {
        position: relative;
        width: 30rem;
        padding: 0 1.5rem;
-       background-color: rgba(69, 29, 143, 0.452);
+       background-color: rgba(39, 21, 63, 0.514);
        z-index: 2;
    }
 
@@ -301,6 +301,7 @@ body {
 
    span{
        color:lightgray;
+       font-size: 20px;
    }
 
   
