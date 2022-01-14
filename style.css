@@ -245,4 +245,62 @@ body {
       color: lightgray;
   }
 
+  div#masthead,
+   div#masthead div.slider-item,
+   div#masthead div.slider-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 40vh;
+    overflow: hidden;
+
+   }
+
+   div#masthead {
+       position: relative;
+   }
+
+   div#masthead div.slider-item {
+       display: flex;
+       left: 100%;
+       padding: 10vh 10vw;
+       justify-content: center;
+       align-items: center;
+       transition: left .8s ease;
+       z-index: 1;
+
+   }
+
+   div#masthead div.slider-item.top { align-items: flex-start; }
+   div#masthead div.slider-item.bottom { align-items: flex-end; }
+   div#masthead div.slider-item.left { justify-content: flex-start; }
+   div#masthead div.slider-item.right { justify-content: flex-end; }
+
+   div#masthead div.slider-item.active { left: 0; z-index: 2; }
+   div#masthead div.slider-item.sliding { left: -100%; }
+
+   div#masthead div.slider-item img {
+       object-fit: cover;
+       object-position: 0 60%;
+       z-index: 1
+   }
+
+   div#masthead div.slider-item div.slider-content {
+       position: relative;
+       width: 30rem;
+       padding: 0 1.5rem;
+       background-color: rgba(69, 29, 143, 0.452);
+       z-index: 2;
+   }
+
+   div#masthead div.slider-item div.slider-content h2 {
+    text-align: justify;
+
+   }
+
+   span{
+       color:lightgray;
+   }
+
   
