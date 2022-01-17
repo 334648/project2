@@ -22,34 +22,59 @@
                 </a>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="overons.html">Over ons</a></li>
+                <li><a href="overons.html">About us</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="review.html">Review</a></li>
             </ul>
         </nav>
+        
+        <div id="masthead">
+            <div class="slider-item active">
+                <img src="img/pre.jpg" alt="">
+                <div class="slider-content">
+                    <h2>Contact</h2>
+                </div>
+            </div>
+            <div class="slider-item">
+                <img src="img/z.jpg" alt="">
+                <div class="slider-content">
+                    <span>Want to book a reading or do you have any questions? Feel free to contact us!</span>
+                </div>
+            </div>
+            <div class="slider-item">
+                <img src="img/nebula-blue-space-1x-3840x2400.jpg" alt="">
+                <div class="slider-content">
+                    <span>Follow us on social media to stay updated on our latest products/services</span>
+                </div>
     </header>
-    <body background="backgroundimg.jpg">
-    <div>
-        <iframe width="900" height="506" src="https://www.youtube.com/embed/3LpL3O3V0EI" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    </div>    
-
-
-
-
-    <p>According to history, zodiac signs go all the way back to Greek mythology, The original purpose of astrology was to inform the individual of the course of his life on the basis of the positions of the planets and of the zodiacal signs (the 12 astrological constellations) at the moment of his birth or conception. Here we are going to show you the different signs that exist. </p>
-
-</div>
-<footer class="footer">
-    <p class="footerP">© Devika Tewarie & Akshay Baldew  ©</p>
-    <li class="socialMedias"> <img class="instagram" src="img/ig.jpg" href="https://www.instagram.com/costarastrology/?utm_source=ig_embed"/>
-    <li class="facebook"> <img class="facebook" src="img/facebook.png" href="https://www.instagram.com/costarastrology/?utm_source=ig_embed"/> </li>
     
-    </li>
-    </footer>
-</div>
+    <body background="backgroundimg.jpg">
+    
+        <div class="box3"> </div>
+                <script>
+
+                    setInterval(function(){ slide() }, 5000);
+                    function slide() {
+                        let activeSlide = document.querySelector('div.slider-item.active'),
+                        nextSlide = activeSlide.nextElementSibling;
+                        if (!nextSlide) {
+                        nextSlide = document.querySelector('div#masthead div.slider-item:first-of-type')
+                        }
+                    
+                        activeSlide.classList.remove('active');
+                        activeSlide.classList.add('sliding');
+                    
+                        nextSlide.classList.add('active');
+                    
+                        setTimeout(function(){
+                            document.querySelector('div.slider-item.sliding').classList.remove('sliding');
+                          },800);
+                        }
+                    </script>
+
+    
+
+
 </body>
 
 </html>

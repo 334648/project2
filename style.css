@@ -144,7 +144,7 @@ p {
 
 .text1 > p {
     
-    padding-bottom: 7rem;
+    padding-bottom: 5rem;
     font-family: 'Road Rage', 'cursive';
     font-family: 'Rubik', sans-serif;
     font-size: larger;
@@ -209,11 +209,16 @@ body {
     width: 500px;
     height: 500px;
     padding: 10px;
-    border: 5px solid gray;
+    border: 5px solid rgb(30, 23, 70);
     margin: 0;
     position: relative;
     top:200px;
     left: 100px;
+    background-color: rgba(38, 29, 88, 0.185);
+    background-image: url("img/reading.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 300px;
   }
   
   #image1 {
@@ -229,14 +234,34 @@ body {
  .box2 {
     width: 500px;
     height: 500px;
-    padding: 10px;
-    border: 5px solid gray;
+    padding: 9px;
+    border: 5px solid rgb(30, 23, 70);
     margin: 0;
     position: absolute;
     top: -5px;
     left: 700px;
+    background-color: rgba(38, 29, 88, 0.185);
+    background-image: url("img/as.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 250px;
   }
 
+  .box3 {
+    width: 500px;
+    height: 400px;
+    padding: 15px;
+    border: 5px solid rgb(34, 24, 87);
+    position: relative;
+    top: -50px;
+    left: -10px;
+    margin: 100px auto;
+    background-color: rgba(46, 30, 88, 0);
+    background-image: url("img/some.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 500px;
+  }
   p{
       color: #fefefe;
   }
@@ -245,4 +270,62 @@ body {
       color: lightgray;
   }
 
-  
+  div#masthead,
+   div#masthead div.slider-item,
+   div#masthead div.slider-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 30vh;
+    overflow: hidden;
+
+   }
+
+   div#masthead {
+       position: relative;
+   }
+
+   div#masthead div.slider-item {
+       display: flex;
+       left: 100%;
+       padding: 10vh 10vw;
+       justify-content: center;
+       align-items: center;
+       transition: left .8s ease;
+       z-index: 1;
+
+   }
+
+   div#masthead div.slider-item.top { align-items: flex-start; }
+   div#masthead div.slider-item.bottom { align-items: flex-end; }
+   div#masthead div.slider-item.left { justify-content: flex-start; }
+   div#masthead div.slider-item.right { justify-content: flex-end; }
+
+   div#masthead div.slider-item.active { left: 0; z-index: 2; }
+   div#masthead div.slider-item.sliding { left: -100%; }
+
+   div#masthead div.slider-item img {
+       object-fit: cover;
+       object-position: 0 60%;
+       z-index: 1
+   }
+
+   div#masthead div.slider-item div.slider-content {
+       position: relative;
+       width: 30rem;
+       padding: 0 1.5rem;
+       background-color: rgba(39, 21, 63, 0.514);
+       z-index: 2;
+   }
+
+   div#masthead div.slider-item div.slider-content h2 {
+    text-align: justify;
+
+   }
+
+   span{
+       color:lightgray;
+       font-size: 20px;
+   }
+
