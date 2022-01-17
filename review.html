@@ -39,7 +39,6 @@
 <img src="img/co.jpg" alt="Constellations" width="470" height="470" div style = "position:relative; left:1000px; top:2px";>
 
 
-
 <div class="lijst">
 </div>
 <div class="lijst">
@@ -48,38 +47,35 @@
 
       <!--Het formulier komt hier-->
       <form action="./createe.php" method="post">
-        <label class="form-label" for="inputFirstname">Voornaam: </label>
+        <label class="form-label" for="inputFirstname">Firstname: </label>
         <input class="form-control mb-3" type="text" name="firstname" id="inputFirstname" placeholder="verplicht.."
           required>
          <br>
          <br>
-        <label for="inputLastname">Tussenvoegsel: </label>
-        <input class="form-control mb-3" type="text" name="infix" id="inputInfix" placeholder="optioneel" required>
+        <label for="inputLastname">Infix: </label>
+        <input class="form-control mb-3" type="text" name="infix" id="inputInfix" placeholder="optioneel" optional>
         <br>
         <br>
-        <label for="inputLastname">Achternaam: </label>
+        <label for="inputLastname">Lastname: </label>
         <input class="form-control mb-3" type="text" name="lastname" id="inputLastname" placeholder="verplicht..." required>
          <br>
          <br>
-       <label class="form-label" for="inputSelect"> Welke service heb je gekozen?</label>
+       <label class="form-label" for="inputSelect"> Which service did you choose?</label>
        <select name="snoepgoed" class="form-select mb-4" id="inputSelect">
-        <option value="">kies service</option>
+        <option value="">choose service</option>
         <option value="">reading</option>
         <option value="">our products</option>
       </select>
        <br>
        <br>
-      <label for="inputGender">Vrouw </label>
+      <label for="inputGender">Woman </label>
       <input type= "radio" name="gender" id="inputGender" value="vrouw">
        <br>
       <label for="inputGender">Man </label>
       <input type= "radio" name="gender" id="inputGender" value="man">
-      <br>
-      <label for="inputGender">Anders </label>
-      <input type= "radio" name="gender" id="inputGender" value="anders">
        <br>
        <br>
-       <textarea id="subject" name="subject" placeholder="Schrijf hier je ervaring!" style="height:100px"></textarea>
+       <textarea id="subject" name="subject" placeholder="Write your experience!" style="height:100px"></textarea>
    
        <br>
         <input type="submit" value="verstuur" class="btn btn-outline-success btn-lg form-control" >
