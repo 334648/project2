@@ -190,19 +190,11 @@ body {
   .lijst {
     color: rgb(255, 255, 255);
     background-color: #e0d1d100;
-    margin-top:-180px;
-    background-size: 50% auto;
-    width: 80%;
-  
+    margin-top:-400px;
+    width: 50%;
+    position: relative;
+    left: -200px;
   }
-
-   .text3 > p {
-    color: rgb(255, 255, 255);
-    width:150%;
-    padding-left:900px;
-    font-family: 'Road Rage', 'cursive';
-    font-family: 'Rubik', sans-serif;
-}
 
 
 .box1 {
@@ -329,3 +321,12 @@ body {
        font-size: 20px;
    }
 
+   label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}

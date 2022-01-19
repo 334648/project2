@@ -28,8 +28,6 @@ $sql "INSERT INTO `users` (`id`
 
 mysqli_query($conn, $sql);          
 
-//Met een header fuctie wordt je direct doorgestuurd naar een andere pagina
-//header("Location: ./index.php");
 
 echo "<h3> Uw gegevens zijn opgeslagen </h3>"
 header (Refresh: 2.5; url=./index.php");
