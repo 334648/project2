@@ -77,7 +77,7 @@ $record = mysqli_fetch_assoc($result);
                         <select name="city" class="form-select mb-2" id="inputSelect" required>
                             <option value="" disabled selected>choose service</option>
                                 <option value="Reading" <?php if ($record["service"] == "reading") { echo "selected"; } ?>>Reading</option>
-                                <option value="Our product" <?php if ($record["our product"] == "kleren") { echo "selected"; } ?>>Our product</option>
+                                <option value="Our product" <?php if ($record["service"] == "our_product") { echo "selected"; } ?>>Our product</option>
                         </select>
                     </div>
 

@@ -14,7 +14,6 @@ $sql = "UPDATE `reviews`
             SET `firstname` = '$firstname',
                 `infix` = '$infix',
                 `lastname` = '$lastname',
-                `email` = '$email',
                 `service` = $service',
                 `gender` = '$gender',
                 `message` = '$message',

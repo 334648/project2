@@ -16,7 +16,6 @@
                     <td>{$record['firstname']}</td>
                     <td>{$record['infix']}</td>
                     <td>{$record['lastname']}</td>
-                    <td>{$record['email']}</td>
                     <td>{$record['service']}</td>
                     <td>{$record['gender']}</td>
                     <td>{$record['message']}</td>
@@ -73,7 +72,6 @@
                             <th>Firstname</th>
                             <th>Infix</th>
                             <th>Lastname</th>
-                            <th>Email</th>
                             <th>Service</t>
                             <th>Gender</th>
                             <th>Message</th>

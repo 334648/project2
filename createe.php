@@ -2,37 +2,26 @@
 
 include("./connect_db.php");
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$databasename = "reviews";
-
-$conn = mysqli_connect($servername, $username, $password, $databasename);
-
-
 $firstname = $_POST["firstname"];
 $infix = $_POST["infix"];
 $lasname = $_POST["lastname"];
-$email = $_POST ["email"];
 $service= $_POST["service"];
 $gender= $_POST["gender"];
 $message= $_POST["message"];
 
 
 
-$sql "INSERT INTO `reviews` (`id`
+$sql "INSERT INTO `reviews` (`id`,
                             `firstname`,
                             `infix`,
-                            `lastname`
-                            `email`
-                            `service`
-                            `gender`
+                            `lastname`,
+                            `service`,
+                            `gender`,
                             `message`)
-            VALUES         (NULL
-                             '$firstname',
+            VALUES         (NULL,
+                            '$firstname',
                             '$infix',
-                            '$lastname'
-                            '$email',
+                            '$lastname',
                             '$service',
                             '$gender',
                             '$message');";
@@ -41,6 +30,30 @@ $sql "INSERT INTO `reviews` (`id`
 mysqli_query($conn, $sql);          
 
 
-echo "<h3> Uw gegevens zijn opgeslagen </h3>"
-header (Refresh: 2.5; url=./index.php");
+$text = "<h3 class='text'>Thank you for your application. We will response within 5 workdays.
+<br>
+<br>
+Please wait until the site refreshes.</h3>";
+header("Refresh:4; url=./read.php");
 ?>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+   <!-- css bestand -->
+   <link rel="stylesheet" href="css/style.css">
+
+    <title>Thank you</title>
+  </head>
+  <body class="create">
+    <?php echo $message; ?>
+
+  </body>
+</html>
