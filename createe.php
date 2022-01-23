@@ -20,7 +20,7 @@ $message= $_POST["message"];
 
 
 
-$sql "INSERT INTO `users` (`id`
+$sql "INSERT INTO `reviews` (`id`
                             `firstname`,
                             `infix`,
                             `lastname`
