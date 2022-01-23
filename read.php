@@ -3,7 +3,7 @@
     include("./connect_db.php");
 
     
-    $sql = "SELECT * FROM `review`";
+    $sql = "SELECT * FROM `reviews`";
 
   
     $result = mysqli_query($conn, $sql);
@@ -16,8 +16,10 @@
                     <td>{$record['firstname']}</td>
                     <td>{$record['infix']}</td>
                     <td>{$record['lastname']}</td>
+                    <td>{$record['email']}</td>
+                    <td>{$record['service']}</td>
                     <td>{$record['gender']}</td>
-                    <td>{$record['text2']}</td>
+                    <td>{$record['message']}</td>
                     <td>
                         <a href='./update.php?id={$record['id']}'>
                             <i class='bi bi-pencil-square'></i>
@@ -71,8 +73,10 @@
                             <th>Firstname</th>
                             <th>Infix</th>
                             <th>Lastname</th>
+                            <th>Email</th>
+                            <th>Service</t>
                             <th>Gender</th>
-                            <th>text2</t>
+                            <th>Message</th>
                             <th>&nbsp;</th>
                             <th>&nbsp;</th>
                         </tr>

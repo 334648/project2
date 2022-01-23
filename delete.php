@@ -4,7 +4,7 @@ include("./connect_db.php");
 
 $id = $_GET["id"];
 
-$sql = "DELETE FROM `applicants` WHERE `id` = $id";
+$sql = "DELETE FROM `reviews` WHERE `id` = $id";
 
 mysqli_query($conn, $sql);
 

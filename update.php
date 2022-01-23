@@ -4,7 +4,7 @@ include("./connect_db.php");
 
 $id = $_GET["id"];
 
-$sql = "SELECT * FROM `applicants` WHERE `id` = $id";
+$sql = "SELECT * FROM `reviews` WHERE `id` = $id";
 
 $result = mysqli_query($conn, $sql);
 
@@ -82,8 +82,8 @@ $record = mysqli_fetch_assoc($result);
                     </div>
 
                     <div class="col-12">
-                        <label for="inputGood_deeds" class="form-label">text2</label>
-                        <input class="form-control mb-4" type="text" name="text2" id="inputText2" placeholder="not required" value="<?php echo $record["Text2"]; ?>">
+                        <label for="inputMessage" class="form-label">Message</label>
+                        <input class="form-control mb-4" type="text" name="text2" id="inputMessage" placeholder="not required" value="<?php echo $record["message"]; ?>">
                     </div>
 
                     <input type="hidden" value="<?php echo $id; ?>" name="id">

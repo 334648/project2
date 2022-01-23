@@ -5,7 +5,7 @@ include("./connect_db.php");
 $servername = "localhost";
 $username = "root";
 $password = "";
-$databasename = "sinterklaasverlanglijst-c";
+$databasename = "reviews";
 
 $conn = mysqli_connect($servername, $username, $password, $databasename);
 
@@ -13,17 +13,29 @@ $conn = mysqli_connect($servername, $username, $password, $databasename);
 $firstname = $_POST["firstname"];
 $infix = $_POST["infix"];
 $lasname = $_POST["lastname"];
+$email = $_POST ["email"];
+$service= $_POST["service"];
 $gender= $_POST["gender"];
+$message= $_POST["message"];
+
 
 
 $sql "INSERT INTO `users` (`id`
                             `firstname`,
                             `infix`,
-                            `lastname`)
+                            `lastname`
+                            `email`
+                            `service`
+                            `gender`
+                            `message`)
             VALUES         (NULL
                              '$firstname',
                             '$infix',
-                            '$lastname');";
+                            '$lastname'
+                            '$email',
+                            '$service',
+                            '$gender',
+                            '$message');";
             
 
 mysqli_query($conn, $sql);          

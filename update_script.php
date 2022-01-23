@@ -7,15 +7,17 @@ $firstname = $_POST["firstname"];
 $infix = $_POST["infix"];
 $lastname = $_POST["lastname"];
 $gender = $_POST["gender"];
-$text2 = $_POST["text2"];
+$text2 = $_POST["message"];
 
 
-$sql = "UPDATE `applicants` 
+$sql = "UPDATE `reviews` 
             SET `firstname` = '$firstname',
                 `infix` = '$infix',
                 `lastname` = '$lastname',
+                `email` = '$email',
+                `service` = $service',
                 `gender` = '$gender',
-                `text2` = '$text2',
+                `message` = '$message',
             WHERE `id` = $id;";
 
 mysqli_query($conn, $sql);
