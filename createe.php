@@ -9,22 +9,21 @@ $service= $_POST["service"];
 $gender= $_POST["gender"];
 $message= $_POST["message"];
 
-
-
-$sql "INSERT INTO `reviews` (`id`,
-                            `firstname`,
-                            `infix`,
-                            `lastname`,
-                            `service`,
-                            `gender`,
-                            `message`)
-            VALUES         (NULL,
-                            '$firstname',
-                            '$infix',
-                            '$lastname',
-                            '$service',
-                            '$gender',
-                            '$message');";
+ 
+    $sql =  "INSERT INTO `applicants` (`id`, 
+                                       `firstname`,
+                                       `infix`,
+                                       `lastname`,
+                                       `service`,
+                                       `gender`,
+                                       `message`)
+                    VALUES 			  (NULL, 
+                                       '$firstname',
+                                       '$infix',
+                                       '$lastname',
+                                       '$service',
+                                       '$gender',
+                                       '$message');";
             
 
 mysqli_query($conn, $sql);          

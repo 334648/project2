@@ -56,8 +56,6 @@
             <div class="col-12">
                 <h1>Review</h1>
                 <hr>
-                <h5>Let us know what you think!</h5>
-                <a href="index.php"><button type="button" class="btn btn-outline-danger">Sign in</button></a>
             </div>
         </div>
     </div>
