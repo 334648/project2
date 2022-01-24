@@ -3,23 +3,20 @@
 include("./connect_db.php");
 
 $firstname = $_POST["firstname"];
-$infix = $_POST["infix"];
 $lasname = $_POST["lastname"];
 $service= $_POST["service"];
 $gender= $_POST["gender"];
 $message= $_POST["message"];
 
  
-    $sql =  "INSERT INTO `applicants` (`id`, 
+    $sql =  "INSERT INTO `users_` (`id`, 
                                        `firstname`,
-                                       `infix`,
                                        `lastname`,
                                        `service`,
                                        `gender`,
                                        `message`)
                     VALUES 			  (NULL, 
                                        '$firstname',
-                                       '$infix',
                                        '$lastname',
                                        '$service',
                                        '$gender',

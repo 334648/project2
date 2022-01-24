@@ -10,9 +10,8 @@ $gender = $_POST["gender"];
 $text2 = $_POST["message"];
 
 
-$sql = "UPDATE `reviews` 
+$sql = "UPDATE `users_` 
             SET `firstname` = '$firstname',
-                `infix` = '$infix',
                 `lastname` = '$lastname',
                 `service` = $service',
                 `gender` = '$gender',

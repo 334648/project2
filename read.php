@@ -3,7 +3,7 @@
     include("./connect_db.php");
 
     
-    $sql = "SELECT * FROM `reviews`";
+    $sql = "SELECT * FROM `users_`";
 
   
     $result = mysqli_query($conn, $sql);
@@ -14,7 +14,6 @@
         $row = $row . "<tr>
                     <td>{$record['id']}</td>
                     <td>{$record['firstname']}</td>
-                    <td>{$record['infix']}</td>
                     <td>{$record['lastname']}</td>
                     <td>{$record['service']}</td>
                     <td>{$record['gender']}</td>
@@ -68,7 +67,6 @@
                         <tr>
                             <th>ID</th>
                             <th>Firstname</th>
-                            <th>Infix</th>
                             <th>Lastname</th>
                             <th>Service</t>
                             <th>Gender</th>

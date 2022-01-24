@@ -4,7 +4,7 @@ include("./connect_db.php");
 
 $id = $_GET["id"];
 
-$sql = "SELECT * FROM `reviews` WHERE `id` = $id";
+$sql = "SELECT * FROM `users_` WHERE `id` = $id";
 
 $result = mysqli_query($conn, $sql);
 
@@ -49,11 +49,6 @@ $record = mysqli_fetch_assoc($result);
                         <form action="./update_script.php" method="post">
                             <label for="inputFirstname" class="form-label">Name:</label>
                             <input class="form-control mb-2" type="text" name="firstname" id="inputFirstname" placeholder="required" value="<?php echo $record["firstname"]; ?>" required>
-                    </div>
-
-                    <div class="col-5">
-                        <label for="inputInfix" class="form-label">Infix:</label>
-                        <input class="form-control mb-2" type="text" name="infix" id="inputInfix" placeholder="not required" value="<?php echo $record["infix"]; ?>">
                     </div>
 
 
