@@ -70,7 +70,6 @@
                             <th>Lastname</th>
                             <th>Service</t>
                             <th>Gender</th>
-                            <th>Email</th>
                             <th>Message</th>
                             <th>&nbsp;</th>
                             <th>&nbsp;</th>

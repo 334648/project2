@@ -3,7 +3,7 @@
 include("./connect_db.php");
 
 $firstname = $_POST["firstname"];
-$lasname = $_POST["lastname"];
+$lastname = $_POST["lastname"];
 $service= $_POST["service"];
 $gender= $_POST["gender"];
 $message= $_POST["message"];

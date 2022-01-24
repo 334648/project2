@@ -5,6 +5,7 @@ include ("./connect_db.php");
 $id = $_POST["id"];
 $firstname = $_POST["firstname"];
 $lastname = $_POST["lastname"];
+$service = $_POST["service"];
 $gender = $_POST["gender"];
 $message = $_POST["message"];
 
