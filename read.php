@@ -3,7 +3,7 @@
     include("./connect_db.php");
 
     
-    $sql = "SELECT * FROM `users_`";
+    $sql = "SELECT * FROM `users`";
 
   
     $result = mysqli_query($conn, $sql);
@@ -47,13 +47,13 @@
   
     <link rel="stylesheet" href="style.css">
 
-    <title>Crud met php en mysql</title>
+    <title>Review pagina</title>
   </head>
   <body class="read">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <h1>Review</h1>
+                <h2>Review</h2>
                 <hr>
             </div>
         </div>
@@ -70,6 +70,7 @@
                             <th>Lastname</th>
                             <th>Service</t>
                             <th>Gender</th>
+                            <th>Email</th>
                             <th>Message</th>
                             <th>&nbsp;</th>
                             <th>&nbsp;</th>

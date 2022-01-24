@@ -4,7 +4,7 @@ include("./connect_db.php");
 
 $id = $_GET["id"];
 
-$sql = "SELECT * FROM `users_` WHERE `id` = $id";
+$sql = "SELECT * FROM `users` WHERE `id` = $id";
 
 $result = mysqli_query($conn, $sql);
 
@@ -28,18 +28,16 @@ $record = mysqli_fetch_assoc($result);
 
     <title>Database</title>
 </head>
-
+  <br>
 <body class="home">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
                 <h1>Review</h1>
-                <hr>
-                <h5>Let us know what you think!</h5>
-                <a href="read.php"><button type="button" class="btn btn-outline-danger">Data</button></a>
             </div>
         </div>
     </div>
+
     <div class="container">
         <div class="row">
             <div class="col-6">
@@ -53,7 +51,7 @@ $record = mysqli_fetch_assoc($result);
 
 
                     <div class="col-12">
-                        <label for="inputLastname" class="form-label">Surname:</label>
+                        <label for="inputLastname" class="form-label">Lastname:</label>
                         <input class="form-control mb-2" type="text" name="lastname" id="inputLastname" placeholder="required" value="<?php echo $record["lastname"]; ?>" required>
                     </div>
 
@@ -69,7 +67,7 @@ $record = mysqli_fetch_assoc($result);
 
                     <div class="col-7">
                         <label class="form-label" for="inputSelect">Which service did you choose?</label>
-                        <select name="city" class="form-select mb-2" id="inputSelect" required>
+                        <select name="service" class="form-select mb-2" id="inputSelect" required>
                             <option value="" disabled selected>choose service</option>
                                 <option value="Reading" <?php if ($record["service"] == "reading") { echo "selected"; } ?>>Reading</option>
                                 <option value="Our product" <?php if ($record["service"] == "our_product") { echo "selected"; } ?>>Our product</option>
@@ -78,7 +76,7 @@ $record = mysqli_fetch_assoc($result);
 
                     <div class="col-12">
                         <label for="inputMessage" class="form-label">Message</label>
-                        <input class="form-control mb-4" type="text" name="text2" id="inputMessage" placeholder="not required" value="<?php echo $record["message"]; ?>">
+                        <input class="form-control mb-4" type="text" name="message" id="inputMessage" placeholder="not required" value="<?php echo $record["message"]; ?>">
                     </div>
 
                     <input type="hidden" value="<?php echo $id; ?>" name="id">
@@ -91,7 +89,15 @@ $record = mysqli_fetch_assoc($result);
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-   
+    <body class="home">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">             
+                <a href="read.php"><button type="button" class="btn btn-outline-danger">Data</button></a>
+            </div>
+        </div>
+    </div>
+    
     <script src="js/app.js"></script>
 </body>
 

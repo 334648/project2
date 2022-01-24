@@ -4,13 +4,12 @@ include ("./connect_db.php");
 
 $id = $_POST["id"];
 $firstname = $_POST["firstname"];
-$infix = $_POST["infix"];
 $lastname = $_POST["lastname"];
 $gender = $_POST["gender"];
-$text2 = $_POST["message"];
+$message = $_POST["message"];
 
 
-$sql = "UPDATE `users_` 
+$sql = "UPDATE `users` 
             SET `firstname` = '$firstname',
                 `lastname` = '$lastname',
                 `service` = $service',

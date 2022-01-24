@@ -9,7 +9,7 @@ $gender= $_POST["gender"];
 $message= $_POST["message"];
 
  
-    $sql =  "INSERT INTO `users_` (`id`, 
+    $sql =  "INSERT INTO `users` (`id`, 
                                        `firstname`,
                                        `lastname`,
                                        `service`,
@@ -26,10 +26,6 @@ $message= $_POST["message"];
 mysqli_query($conn, $sql);          
 
 
-$text = "<h3 class='text'>Thank you for your application. We will response within 5 workdays.
-<br>
-<br>
-Please wait until the site refreshes.</h3>";
 header("Refresh:4; url=./read.php");
 ?>
 
@@ -49,7 +45,7 @@ header("Refresh:4; url=./read.php");
     <title>Thank you</title>
   </head>
   <body class="create">
-    <?php echo $message; ?>
+    <?php echo $text; ?>
 
   </body>
 </html>
