@@ -49,18 +49,12 @@
 
     <title>Review pagina</title>
   </head>
-  <body class="read">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <h2>Review</h2>
-                <hr>
-            </div>
-        </div>
-    </div>
+  <br>
+   <h2>Review Database </h2>
+
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12" style="background-color:white ; margin-top:60px">
 
                 <table class="table table-striped">
                     <thead>
