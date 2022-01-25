@@ -244,6 +244,22 @@ body {
     background-repeat: no-repeat;
     background-size: 500px;
   }
+
+  .box5 {
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    border: 5px solid rgb(30, 23, 70);
+    margin: 0;
+    position: relative;
+    top:200px;
+    left: 500px;
+    background-color: rgba(149, 145, 168, 0.185);
+    background-image: url("img/about-us\ \(1\).png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 300px;
+  }
   p{
       color: #fefefe;
   }
