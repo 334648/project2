@@ -47,7 +47,7 @@
   
     <link rel="stylesheet" href="style.css">
 
-    <title>Review pagina</title>
+    <title> Review pagina</title>
   </head>
   <br>
    <h2>Review Database </h2>
