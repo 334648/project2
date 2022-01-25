@@ -65,8 +65,8 @@
                             <th>Services</t>
                             <th>Gender</th>
                             <th>Message</th>
-                            <th>&nbsp;</th>
-                            <th>&nbsp;</th>
+                            <th>Update</th>
+                            <th>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -76,7 +76,7 @@
             </div>
         </div>
     </div>
-
+    <a href="index.html"><button type="button" class="btn btn-outline-danger">Back to home page</button></a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     
