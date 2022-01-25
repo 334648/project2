@@ -1,6 +1,7 @@
 <?php
 
 include("./connect_db.php");
+var_dump($_POST);
 
 $firstname = $_POST["firstname"];
 $lastname = $_POST["lastname"];
