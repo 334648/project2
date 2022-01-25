@@ -15,7 +15,7 @@
                     <td>{$record['id']}</td>
                     <td>{$record['firstname']}</td>
                     <td>{$record['lastname']}</td>
-                    <td>{$record['service']}</td>
+                    <td>{$record['services']}</td>
                     <td>{$record['gender']}</td>
                     <td>{$record['message']}</td>
                     <td>
@@ -62,7 +62,7 @@
                             <th>ID</th>
                             <th>Firstname</th>
                             <th>Lastname</th>
-                            <th>Service</t>
+                            <th>Services</t>
                             <th>Gender</th>
                             <th>Message</th>
                             <th>&nbsp;</th>

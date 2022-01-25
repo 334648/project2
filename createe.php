@@ -4,7 +4,7 @@ include("./connect_db.php");
 
 $firstname = $_POST["firstname"];
 $lastname = $_POST["lastname"];
-$service= $_POST["service"];
+$services= $_POST["services"];
 $gender= $_POST["gender"];
 $message= $_POST["message"];
 
@@ -12,13 +12,13 @@ $message= $_POST["message"];
     $sql =  "INSERT INTO `users` (`id`, 
                                        `firstname`,
                                        `lastname`,
-                                       `service`,
+                                       `services`,
                                        `gender`,
                                        `message`)
                     VALUES 			  (NULL, 
                                        '$firstname',
                                        '$lastname',
-                                       '$service',
+                                       '$services',
                                        '$gender',
                                        '$message');";
             

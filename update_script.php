@@ -5,7 +5,7 @@ include ("./connect_db.php");
 $id = $_POST["id"];
 $firstname = $_POST["firstname"];
 $lastname = $_POST["lastname"];
-$service = $_POST["service"];
+$service = $_POST["services"];
 $gender = $_POST["gender"];
 $message = $_POST["message"];
 
@@ -13,7 +13,7 @@ $message = $_POST["message"];
 $sql = "UPDATE `users` 
             SET `firstname` = '$firstname',
                 `lastname` = '$lastname',
-                `service` = '$service',
+                `services` = '$services',
                 `gender` = '$gender',
                 `message` = '$message',
             WHERE `id` = $id;";
